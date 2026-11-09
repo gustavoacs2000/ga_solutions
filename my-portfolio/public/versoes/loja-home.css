@@ -353,3 +353,13 @@ body.board{background:#D9D3C8;font-family:'Manrope',system-ui,sans-serif;-webkit
   .wa a{width:100%}
   .ba-card{padding:18px}
 }
+
+/* ================= DIREÇÃO 2b · FEIRA TECH (marinho + turquesa) =================
+   Mesma estrutura da Feira, nova paleta:
+   fundo #F3F4F6 · marca #0A2540 · destaque #00D4B2.
+   #007D69 = turquesa escurecido, só para texto pequeno (contraste AA sobre o fundo). */
+.theme-feira-tech{--paper:#F3F4F6;--card:#FFFFFF;--tint:#CCF6EF;--ink:#0A2540;--muted:#4A5B70;--line:rgba(10,37,64,.14);--gold:#00D4B2;--goldText:#007D69;--dark:#0A2540;--darkSurf:#123458;--darkInk:#F3F4F6;--darkMuted:#A9B9CC;--darkLine:rgba(243,244,246,.16);--ok:#007D69;--bad:#C2392B;--alt:#E6E9EE;--alt2:#FFFFFF}
+.theme-feira-tech .final-box p{color:#0A2540}
+.theme-feira-tech .final-box::before{border-color:rgba(10,37,64,.22)}
+.theme-feira-tech .final-box .btn{color:#F3F4F6 !important;box-shadow:4px 4px 0 #F3F4F6}
+.theme-feira-tech .plan.featured li .i,.theme-feira-tech .ps-good li .i,.theme-feira-tech .ps-good h3{color:var(--gold)}
