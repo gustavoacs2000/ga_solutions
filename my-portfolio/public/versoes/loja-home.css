@@ -363,3 +363,34 @@ body.board{background:#D9D3C8;font-family:'Manrope',system-ui,sans-serif;-webkit
 .theme-feira-tech .final-box::before{border-color:rgba(10,37,64,.22)}
 .theme-feira-tech .final-box .btn{color:#F3F4F6 !important;box-shadow:4px 4px 0 #F3F4F6}
 .theme-feira-tech .plan.featured li .i,.theme-feira-tech .ps-good li .i,.theme-feira-tech .ps-good h3{color:var(--gold)}
+
+/* ---------- Feira Tech · DARK MODE ----------
+   Ativado pela classe .is-dark no .site (botão sol/lua no topo).
+   Padrão: segue o sistema; ?tema=escuro|claro força; escolha fica salva. */
+.mode{width:44px;height:44px;flex:0 0 auto;display:grid;place-items:center;border-radius:14px;border:2px solid var(--ink);background:var(--card);color:var(--ink);cursor:pointer;padding:0}
+.mode:hover{background:var(--tint)}
+.mode .i-sun{display:none}
+.is-dark .mode .i-sun{display:block}
+.is-dark .mode .i-moon{display:none}
+@container (max-width:700px){.mode{margin-left:auto;width:40px;height:40px}}
+
+.theme-feira-tech.is-dark{color-scheme:dark;--paper:#0A2540;--card:#0F2F4F;--tint:#0E3D52;--ink:#F3F4F6;--muted:#A9B9CC;--line:rgba(243,244,246,.14);--gold:#00D4B2;--goldText:#00D4B2;--dark:#061A2E;--darkSurf:#0C2742;--darkInk:#F3F4F6;--darkMuted:#A9B9CC;--darkLine:rgba(243,244,246,.14);--ok:#00D4B2;--bad:#FF7B6B;--alt:#08203A;--alt2:#0D2B49}
+/* cartões: borda azul-acinzentada e sombra sólida escura no lugar do contorno marinho */
+.theme-feira-tech.is-dark .feat,.theme-feira-tech.is-dark .excard,.theme-feira-tech.is-dark .plan,.theme-feira-tech.is-dark .ba-card,.theme-feira-tech.is-dark .ps-bad,.theme-feira-tech.is-dark .addon{border-color:#2D4D70;box-shadow:6px 6px 0 #020D1A}
+.theme-feira-tech.is-dark .plan.featured{border-color:var(--gold);box-shadow:8px 8px 0 rgba(0,212,178,.45)}
+.theme-feira-tech.is-dark .pill,.theme-feira-tech.is-dark .btn-ghost{border-color:#3A5C82}
+.theme-feira-tech.is-dark .mode{border-color:#3A5C82}
+/* textos sobre turquesa continuam marinho */
+.theme-feira-tech.is-dark .btn{color:#0A2540 !important;border-color:#00D4B2;box-shadow:4px 4px 0 #020D1A}
+.theme-feira-tech.is-dark .btn:hover{box-shadow:5px 5px 0 #020D1A}
+.theme-feira-tech.is-dark .fico,.theme-feira-tech.is-dark .d .fico,.theme-feira-tech.is-dark .badge,.theme-feira-tech.is-dark .demo{color:#0A2540}
+.theme-feira-tech.is-dark .addon .fico{background:var(--gold)}
+.theme-feira-tech.is-dark .st .num{-webkit-text-stroke:0}
+.theme-feira-tech.is-dark .final-box{color:#0A2540}
+.theme-feira-tech.is-dark .final-box .btn{background:#0A2540;color:#F3F4F6 !important;border-color:#0A2540;box-shadow:4px 4px 0 #F3F4F6}
+/* mock do WhatsApp e pedido */
+.theme-feira-tech.is-dark .chat{background:#08203A}
+.theme-feira-tech.is-dark .msg{background:#16395C}
+.theme-feira-tech.is-dark .order .tot{background:rgba(0,212,178,.10)}
+.theme-feira-tech.is-dark .mini-win{box-shadow:0 10px 30px -12px rgba(0,0,0,.6)}
+.theme-feira-tech .navlinks a{white-space:nowrap}
