@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferreira Gomes · Imóveis de Alto Padrão em Brasília</title>
+<meta name="description" content="Ferreira Gomes Negócios Imobiliários — imóveis de alto padrão em Brasília: Lago Sul, Jardim Botânico, Noroeste e Asa Norte. Venda, locação, construção e house flipping. CRECI PJ 29053.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C0911; --bg2:#110D18; --card:#161120; --line:rgba(196,170,230,.09); --plum:#562B82; --plum2:#7A45B0; --lilac:#C7A9EE;
+  --t1:rgba(255,255,255,.92); --t2:rgba(255,255,255,.55); --t3:rgba(255,255,255,.38);
+  --teal:#5ED3D6; --teal2:rgba(79,209,212,.75); --teal3:rgba(79,209,212,.6);
+  --serif:'Fraunces',Georgia,serif; --sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--t1);font-family:var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+em{font-style:italic;font-weight:300}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+@media(min-width:1024px){.wrap{padding:0 48px}}
+.ico{width:1em;height:1em;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.025;background-size:128px;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .85s var(--ease),transform .85s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}.rv.d5{transition-delay:.5s}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* shared */
+.eyebrow{display:flex;align-items:center;gap:8px;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--teal3);margin-bottom:16px}
+.eyebrow::before{content:"";width:20px;height:1px;background:currentColor}
+.eyebrow.center{justify-content:center}.eyebrow.center::after{content:"";width:20px;height:1px;background:currentColor}
+.h2{font-family:var(--serif);font-weight:300;font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.08;letter-spacing:-.01em;margin-bottom:16px}
+.h2 em{color:var(--teal2)}
+.lede{display:flex;gap:16px}.lede::before{content:"";width:1px;height:40px;background:var(--line);flex-shrink:0;margin-top:2px}
+.lede p,.sub{font-size:14px;line-height:1.7;color:var(--t3)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-size:14px;font-weight:500;letter-spacing:.02em;transition:all .2s;cursor:pointer;border:0;font-family:var(--sans)}
+.btn:hover{transform:scale(1.02)}.btn:active{transform:scale(.97)}
+.btn-w{background:#fff;color:#1c1917}.btn-w:hover{background:#f1f5f9}
+.btn-g{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;backdrop-filter:blur(6px)}
+.btn-g:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.35)}
+.link-a{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--teal2);transition:color .2s;white-space:nowrap}
+.link-a:hover{color:var(--teal)}
+section{position:relative}
+
+/* ── HERO ── */
+.hero{min-height:100svh;overflow:hidden;background:var(--bg)}
+.hero-img{position:absolute;inset:0;transform:scale(1.12);will-change:transform}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-ov{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(12,8,19,.94) 0%,rgba(18,10,30,.55) 45%,rgba(18,10,30,.12) 100%);opacity:.75}
+.hero-vig{position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,rgba(34,14,56,.5) 0%,transparent 60%)}
+.topbar{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:28px 24px;gap:16px;animation:fade 1.1s ease-out both}
+@media(min-width:1024px){.topbar{padding:28px 48px}}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:38px;height:38px;border:1px solid rgba(160,110,220,.45);border-radius:10px;display:grid;place-items:center;font-family:var(--serif);font-size:15px;color:#fff;letter-spacing:.02em;background:linear-gradient(135deg,rgba(86,43,130,.85),rgba(0,168,173,.55));backdrop-filter:blur(6px)}
+.brand-n{font-family:var(--serif);font-size:1.35rem;line-height:1.1;color:#fff}
+.brand-s{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:2px}
+.nav{display:none;gap:28px;font-size:12px;letter-spacing:.06em;color:rgba(255,255,255,.7)}
+.nav a:hover{color:#fff}
+@media(min-width:1024px){.nav{display:flex}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);font-size:12px;font-weight:500;color:#fff;transition:all .2s;white-space:nowrap}
+.pill:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.35)}
+.hide-sm{display:none}@media(min-width:640px){.hide-sm{display:inline-flex}}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;z-index:20;padding:0 24px 40px;will-change:transform}
+@media(min-width:1024px){.hero-copy{padding:0 48px 64px}}
+@media(max-width:639px){.hero-copy{padding-bottom:100px}}
+.hero-inner{max-width:680px}
+.loc{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);backdrop-filter:blur(6px);color:rgba(255,255,255,.75);margin-bottom:20px}
+.h1{font-family:var(--serif);font-weight:300;font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.05;letter-spacing:-.015em;color:#fff;margin-bottom:16px}
+.h1 em{color:rgba(79,209,212,.9)}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:28px}
+.price b{font-family:var(--serif);font-weight:300;font-size:1.6rem;color:#fff}
+.price span{font-size:14px;color:rgba(255,255,255,.4)}
+.stats{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:32px}
+.stat{display:flex;align-items:center;gap:8px}
+.stat i{width:28px;height:28px;border-radius:8px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:rgba(255,255,255,.7);font-size:13px}
+.stat b{display:block;font-size:14px;font-weight:500;color:#fff;line-height:1.2}
+.stat small{display:block;font-size:9px;color:rgba(255,255,255,.45)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero .h-in{opacity:0;transform:translateY(30px);animation:up .85s var(--ease) forwards}
+.badge{position:absolute;top:100px;right:24px;z-index:20;display:none;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);backdrop-filter:blur(6px);font-size:10px;font-weight:500;color:rgba(255,255,255,.65);opacity:0;animation:slide .6s var(--ease) 1.2s forwards}
+@media(min-width:640px){.badge{display:flex}}
+@media(min-width:1024px){.badge{right:48px}}
+.dot{width:6px;height:6px;border-radius:50%;background:#00A8AD;animation:pulse 2s infinite}
+.scroll{position:absolute;bottom:32px;right:32px;z-index:20;display:none;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.3);font-size:9px;letter-spacing:.22em;text-transform:uppercase;opacity:0;animation:fade .8s 2s forwards}
+.scroll i{width:1px;height:32px;background:rgba(255,255,255,.2);animation:bob 2s ease-in-out infinite}
+@media(min-width:1024px){.scroll{display:flex}}
+@keyframes up{to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slide{from{opacity:0;transform:translateX(16px)}to{opacity:1;transform:none}}
+@keyframes pulse{50%{opacity:.4}}
+@keyframes bob{50%{transform:translateY(6px)}}
+
+/* ── PROPERTIES ── */
+.sec{padding:96px 0;overflow:hidden}
+@media(min-width:1024px){.sec{padding:128px 0}}
+.sec-head{display:flex;flex-direction:column;gap:24px;justify-content:space-between;margin-bottom:56px}
+@media(min-width:640px){.sec-head{flex-direction:row;align-items:flex-end}}
+.sec-head>div{max-width:560px}
+.grid-a{display:grid;gap:16px;margin-bottom:16px}
+@media(min-width:1024px){.grid-a{grid-template-columns:2fr 1fr;gap:20px;margin-bottom:20px}}
+.stack{display:flex;flex-direction:column;gap:16px}@media(min-width:1024px){.stack{gap:20px}}
+.grid-b{display:grid;gap:16px}
+@media(min-width:640px){.grid-b{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid-b{grid-template-columns:repeat(3,1fr);gap:20px}}
+.card{display:flex;flex-direction:column;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.card:hover{transform:translateY(-4px);box-shadow:0 25px 50px -12px rgba(0,0,0,.5)}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:#1B1526}
+.card.big .card-img{aspect-ratio:16/10}
+.card.big{height:100%}.card.big .card-img{flex:1;min-height:280px;aspect-ratio:auto}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.card:hover .card-img img{transform:scale(1.05)}
+.card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),transparent 55%);opacity:.8;transition:opacity .5s}
+.card:hover .card-img::after{opacity:.6}
+.tag{position:absolute;top:12px;left:12px;z-index:2;font-size:9px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:4px 10px;border-radius:6px;border:1px solid;backdrop-filter:blur(6px)}
+.tag.ex{background:rgba(122,69,176,.22);color:var(--lilac);border-color:rgba(160,110,220,.35)}
+.tag.nv{background:rgba(0,168,173,.16);color:#7FE0E2;border-color:rgba(0,168,173,.32)}
+.tag.op{background:rgba(59,130,246,.15);color:#93C5FD;border-color:rgba(59,130,246,.25)}
+.fav{position:absolute;top:12px;right:12px;z-index:2;width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.25);backdrop-filter:blur(6px);display:grid;place-items:center;color:rgba(255,255,255,.6);cursor:pointer;font-size:13px;transition:all .2s}
+.fav:hover{background:rgba(0,0,0,.4)}
+.fav.on{background:rgba(239,68,68,.2);border-color:rgba(248,113,113,.4);color:#F87171}
+.fav.on .ico{fill:#F87171}
+.nb{position:absolute;bottom:12px;left:12px;z-index:2;display:inline-flex;align-items:center;gap:4px;font-size:9px;font-weight:500;color:rgba(255,255,255,.8);background:rgba(0,0,0,.35);backdrop-filter:blur(6px);padding:4px 8px;border-radius:6px}
+.card-body{padding:20px;display:flex;flex-direction:column;flex:0 0 auto}
+.card h3{font-family:var(--serif);font-weight:300;font-size:1.05rem;line-height:1.25;margin-bottom:4px;color:var(--t1)}
+.card.big h3{font-size:1.3rem}
+.card .where{font-size:12px;color:var(--t3);margin-bottom:12px}
+.card .val{font-family:var(--serif);font-weight:300;font-size:1.25rem;color:#fff;margin-bottom:16px}
+.card.big .val{font-size:1.55rem}
+.card .val small{font-family:var(--sans);font-size:12px;color:rgba(255,255,255,.35);margin-left:6px}
+.card hr{border:0;height:1px;background:rgba(255,255,255,.06);margin-bottom:16px}
+.card-foot{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.specs{display:flex;flex-wrap:wrap;gap:6px 16px}
+.specs span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--t2)}
+.arrow{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.1);display:grid;place-items:center;color:rgba(255,255,255,.3);transition:all .2s;flex-shrink:0;font-size:13px}
+.card:hover .arrow{transform:scale(1.1);border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.75)}
+.sold-head{display:flex;align-items:center;gap:16px;margin:56px 0 20px;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--t3)}
+.sold-head i{flex:1;height:1px;background:var(--line)}
+.sold .card-img img{filter:grayscale(.35) brightness(.85)}
+.sold .card:hover .card-img img{filter:none}
+.sold .val{color:var(--t2);font-size:1.05rem}
+.tag.op{background:rgba(255,255,255,.08);color:rgba(255,255,255,.75);border-color:rgba(255,255,255,.18)}
+.bottom-cta{margin-top:48px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:20px;text-align:center}
+@media(min-width:640px){.bottom-cta{flex-direction:row;text-align:left}}
+.bottom-cta a.u{color:var(--teal2);text-decoration:underline;text-underline-offset:3px}
+
+/* ── GALLERY ── */
+.gal{background:var(--bg2)}
+.gal-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 8px;scrollbar-width:none;cursor:grab}
+.gal-track::-webkit-scrollbar{display:none}
+@media(min-width:1024px){.gal-track{padding:4px max(48px,calc((100vw - 1280px)/2 + 48px)) 8px}}
+.gal-item{position:relative;flex:0 0 auto;height:min(58vh,460px);border-radius:16px;overflow:hidden;scroll-snap-align:start;cursor:zoom-in;border:1px solid rgba(255,255,255,.06);background:#1B1526}
+.gal-item.w{aspect-ratio:16/10}.gal-item.n{aspect-ratio:4/5}
+@media(max-width:640px){.gal-item{height:340px}}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gal-item:hover img{transform:scale(1.04)}
+.gal-item span{position:absolute;left:14px;bottom:14px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);backdrop-filter:blur(6px);padding:5px 10px;border-radius:6px}
+.gal-ctrl{display:flex;gap:8px}
+.circ{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.12);background:transparent;color:rgba(255,255,255,.6);display:grid;place-items:center;cursor:pointer;transition:all .2s;font-size:16px}
+.circ:hover{border-color:rgba(255,255,255,.35);color:#fff;background:rgba(255,255,255,.05)}
+.gal-meta{display:flex;flex-wrap:wrap;gap:12px 32px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.gal-meta div b{display:block;font-family:var(--serif);font-weight:300;font-size:1.5rem;color:#fff}
+.gal-meta div small{font-size:11px;color:var(--t3);letter-spacing:.04em}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,6,12,.96);display:none;align-items:center;justify-content:center;padding:64px 16px}
+.lb.open{display:flex;animation:fade .3s}
+.lb img{max-width:min(1200px,100%);max-height:100%;object-fit:contain;border-radius:8px}
+.lb .circ{position:absolute;background:rgba(0,0,0,.4)}
+.lb .x{top:16px;right:16px}.lb .pv{left:16px;top:50%;transform:translateY(-50%)}.lb .nx{right:16px;top:50%;transform:translateY(-50%)}
+.lb-c{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.18em;color:var(--t3)}
+
+/* ── FLIPPING ── */
+.flip-grid{display:grid;gap:48px;align-items:center}
+@media(min-width:1024px){.flip-grid{grid-template-columns:1fr 1.15fr;gap:80px}}
+.steps{display:grid;gap:0;margin-top:36px}
+.step{display:flex;gap:20px;padding:20px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step em{font-family:var(--serif);font-size:1.4rem;color:var(--teal2);width:36px;flex-shrink:0;line-height:1.2}
+.step h4{font-family:var(--serif);font-weight:300;font-size:1.1rem;margin-bottom:4px}
+.step p{font-size:13px;line-height:1.65;color:var(--t3)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:240px 200px;gap:12px}
+@media(min-width:1024px){.mosaic{grid-template-rows:300px 240px}}
+.mosaic figure{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.06);background:#1B1526}
+.mosaic figure:first-child{grid-column:1/-1}
+.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.mosaic figure:hover img{transform:scale(1.04)}
+.mosaic figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(to top,rgba(0,0,0,.8),transparent)}
+.mosaic figcaption b{display:block;font-family:var(--serif);font-weight:300;font-size:1.05rem;color:#fff}
+.mosaic figcaption small{font-size:11px;color:rgba(255,255,255,.55)}
+
+/* ── PROFILE ── */
+.prof{display:grid;gap:48px;align-items:start}
+@media(min-width:1024px){.prof{grid-template-columns:.9fr 1.1fr;gap:80px}}
+.portrait{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/5;border:1px solid rgba(255,255,255,.06);background:#1B1526}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(12,9,17,.85),transparent 50%)}
+.portrait .cap{position:absolute;left:24px;right:24px;bottom:24px;z-index:2}
+.portrait .cap b{display:block;font-family:var(--serif);font-weight:300;font-size:1.5rem;color:#fff}
+.portrait .cap small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal3)}
+.creci{position:absolute;top:20px;left:20px;z-index:2;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.15);background:rgba(0,0,0,.35);backdrop-filter:blur(6px);color:rgba(255,255,255,.8)}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:32px 0}
+.kpis div{background:var(--bg);padding:22px 20px}
+.kpis b{display:block;font-family:var(--serif);font-weight:300;font-size:2rem;color:#fff;line-height:1}
+.kpis small{display:block;margin-top:8px;font-size:12px;color:var(--t3)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{font-size:11px;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.1);color:var(--t2)}
+.mvv{display:grid;gap:12px;margin-top:28px}
+.mvv details{border:1px solid var(--line);border-radius:12px;padding:16px 18px;background:var(--card)}
+.mvv summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-weight:300;font-size:1.05rem}
+.mvv summary::-webkit-details-marker{display:none}
+.mvv summary::after{content:"+";color:var(--teal2);font-family:var(--sans);font-size:18px;transition:transform .3s}
+.mvv details[open] summary::after{transform:rotate(45deg)}
+.mvv p{font-size:13px;line-height:1.7;color:var(--t3);margin-top:10px}
+
+/* ── TESTIMONIALS ── */
+.quotes{display:grid;gap:16px}
+@media(min-width:900px){.quotes{grid-template-columns:repeat(3,1fr);gap:20px}}
+.q{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:28px;display:flex;flex-direction:column}
+.q .mk{font-family:var(--serif);font-size:3rem;line-height:.6;color:var(--teal3);margin-bottom:12px}
+.q p{font-family:var(--serif);font-weight:300;font-size:1.02rem;line-height:1.6;color:rgba(255,255,255,.78);flex:1}
+.q footer{display:flex;align-items:center;gap:12px;margin-top:24px;padding-top:18px;border-top:1px solid var(--line)}
+.av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,rgba(122,69,176,.45),rgba(86,43,130,.15));border:1px solid rgba(160,110,220,.35);display:grid;place-items:center;font-size:12px;font-weight:500;color:var(--lilac)}
+.q footer b{display:block;font-size:13px;font-weight:500}
+.q footer small{font-size:11px;color:var(--t3)}
+.stars{color:#00A8AD;font-size:11px;letter-spacing:2px}
+
+/* ── CONTACT ── */
+.contact{background:var(--bg2)}
+.c-head{text-align:center;max-width:560px;margin:0 auto 48px}
+.form{max-width:760px;margin:0 auto;background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:28px}
+@media(min-width:640px){.form{padding:40px}}
+.row{display:grid;gap:16px;margin-bottom:16px}
+@media(min-width:640px){.row.two{grid-template-columns:1fr 1fr}}
+.f label{display:block;font-size:12px;font-weight:500;color:var(--t2);margin-bottom:8px}
+.f label i,.lbl i{color:#4FD1D4;font-style:normal}
+.lbl{display:block;font-size:9px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--t3);margin-bottom:10px}
+.f input,.f textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:12px 14px;color:#fff;font:14px var(--sans);transition:border-color .2s,background .2s;outline:none;resize:vertical}
+.f input::placeholder,.f textarea::placeholder{color:rgba(255,255,255,.25)}
+.f input:focus,.f textarea:focus{border-color:rgba(79,209,212,.45);background:rgba(255,255,255,.06)}
+.f.err input{border-color:rgba(248,113,113,.6)}
+.f .e{display:none;font-size:10px;color:#F87171;margin-top:6px}.f.err .e{display:block}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{font:500 12px var(--sans);padding:9px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:transparent;color:var(--t2);cursor:pointer;transition:all .2s}
+.opt:hover{border-color:rgba(255,255,255,.25);color:#fff}
+.opt.on{background:rgba(79,209,212,.12);border-color:rgba(79,209,212,.45);color:var(--teal)}
+.grp{margin-bottom:22px}.grp .e{display:none;font-size:10px;color:#F87171;margin-top:6px}.grp.err .e{display:block}
+.submit{display:flex;flex-direction:column;gap:12px;align-items:center;margin-top:28px}
+.submit .btn{width:100%;justify-content:center}
+.submit small{font-size:10px;color:rgba(255,255,255,.28)}
+.ok{display:none;text-align:center;padding:40px 0}
+.ok .ring{width:56px;height:56px;border-radius:50%;border:1px solid rgba(110,231,183,.35);background:rgba(16,185,129,.1);display:grid;place-items:center;margin:0 auto 20px;color:#6EE7B7;font-size:22px}
+.ok h3{font-family:var(--serif);font-weight:300;font-size:1.5rem;margin-bottom:8px}
+.ok p{font-size:14px;color:var(--t3)}
+
+/* ── FOOTER ── */
+.foot{border-top:1px solid var(--line);padding:56px 0 40px}
+.foot-grid{display:grid;gap:36px}
+@media(min-width:900px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr 1fr}}
+.foot h5{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--t3);margin-bottom:14px}
+.foot ul{list-style:none;display:grid;gap:9px}
+.foot li,.foot li a{font-size:13px;color:var(--t2)}
+.foot li a:hover{color:#fff}
+.foot-base{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:11px;color:rgba(255,255,255,.3)}
+
+/* floating */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.fab-main{width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px -8px rgba(37,211,102,.5);transition:transform .2s;font-size:24px;border:0;cursor:pointer}
+.fab-main:hover{transform:scale(1.06)}
+.fab-tip{font-size:12px;padding:8px 14px;border-radius:999px;background:rgba(22,17,32,.9);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(8px);color:var(--t2);opacity:0;transform:translateY(6px);transition:all .4s var(--ease);pointer-events:none}
+.fab.show .fab-tip{opacity:1;transform:none}
+
+/* brand glow (Ferreira Gomes plum + teal) */
+.gal,.contact{background:radial-gradient(1200px 500px at 85% 0%,rgba(86,43,130,.16),transparent 60%),var(--bg2)}
+#imoveis,#house-flipping{background:radial-gradient(900px 420px at 0% 0%,rgba(86,43,130,.10),transparent 60%)}
+.card,.q,.form,.mvv details{border-color:rgba(196,170,230,.08)}
+.card:hover{box-shadow:0 25px 50px -12px rgba(20,8,36,.7)}
+.kpis div{background:linear-gradient(180deg,#120E1A,var(--bg))}
+.opt.on{background:rgba(0,168,173,.14);border-color:rgba(79,209,212,.5);color:#7FE0E2}
+.sold-head{color:rgba(199,169,238,.55)}
+.foot{background:linear-gradient(180deg,transparent,rgba(86,43,130,.08))}
+::selection{background:rgba(122,69,176,.55);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- Ícones (traço estilo lucide) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"/><path d="M12 4v6"/><path d="M2 18h20"/></symbol>
+  <symbol id="i-max" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.7-3.6A2 2 0 0 0 13.7 6H7.3a2 2 0 0 0-1.6.9L3 11l-.6.2A1.5 1.5 0 0 0 1 12.6V16c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4ZM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.7 17.7L0 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4c6.5 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3Z"/></symbol>
+</svg>
+
+<!-- ═════════════ HERO ═════════════ -->
+<section class="hero" id="topo" aria-label="Imóvel em destaque">
+  <div class="hero-img" id="heroImg">
+    <img src="https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/20/img/20_G1712001957.jpg" alt="Residência de alto padrão em condomínio no Altiplano Leste, Lago Sul" fetchpriority="high">
+  </div>
+  <div class="hero-ov" id="heroOv"></div>
+  <div class="hero-vig"></div>
+
+  <header class="topbar">
+    <a href="#topo" class="brand" aria-label="Ferreira Gomes — início">
+      <span class="brand-mark">FG</span>
+      <span>
+        <span class="brand-n" style="display:block">Ferreira Gomes</span>
+        <span class="brand-s" style="display:block">Negócios Imobiliários · Brasília</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#imoveis">Imóveis</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#house-flipping">House Flipping</a>
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a href="tel:+5561996675761" class="pill hide-sm"><svg class="ico"><use href="#i-phone"/></svg>(61) 99667-5761</a>
+  </header>
+
+  <div class="badge"><span class="dot"></span>Novidade em carteira</div>
+
+  <div class="hero-copy" id="heroCopy">
+    <div class="hero-inner">
+      <div class="h-in" style="animation-delay:.2s"><span class="loc"><svg class="ico"><use href="#i-pin"/></svg>Altiplano Leste · Lago Sul · Brasília–DF</span></div>
+      <h1 class="h1 h-in" style="animation-delay:.33s">Residência de alto <em>padrão</em><br>no coração do Altiplano.</h1>
+      <div class="price h-in" style="animation-delay:.46s"><b>R$ 1.860.000</b><span>· Casa térrea em condomínio · construída em 2023</span></div>
+      <div class="stats h-in" style="animation-delay:.59s">
+        <div class="stat"><i><svg class="ico"><use href="#i-bed"/></svg></i><div><b>4 suítes</b><small>6 banheiros</small></div></div>
+        <div class="stat"><i><svg class="ico"><use href="#i-max"/></svg></i><div><b>300 m²</b><small>Área útil</small></div></div>
+        <div class="stat"><i><svg class="ico"><use href="#i-car"/></svg></i><div><b>3 vagas</b><small>Na garagem</small></div></div>
+      </div>
+      <div class="ctas h-in" style="animation-delay:.72s">
+        <a href="#contato" class="btn btn-w">Agendar visita <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a href="#galeria" class="btn btn-g">Ver galeria</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll" aria-hidden="true">Role<i></i></div>
+</section>
+
+<!-- ═════════════ IMÓVEIS ═════════════ -->
+<section class="sec" id="imoveis" aria-labelledby="imoveis-h">
+  <div class="grain"></div>
+  <div class="wrap" style="position:relative">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow rv">Portfólio exclusivo</p>
+        <h2 class="h2 rv d1" id="imoveis-h">Imóveis em <em>destaque</em></h2>
+        <div class="lede rv d2"><p>Curadoria de imóveis de alto padrão em Brasília — alguns deles reformados pela própria Ferreira Gomes, com atenção rigorosa a projeto, acabamento e localização.</p></div>
+      </div>
+      <a class="link-a rv d3" href="https://www.ferreiragomes-imobiliaria.com.br/imoveis/venda/" target="_blank" rel="noopener">Ver todos os imóveis <svg class="ico"><use href="#i-up"/></svg></a>
+    </div>
+
+    <div class="grid-a" id="gridA"></div>
+    <div class="sold-head rv"><span>Vendidos recentemente</span><i></i></div>
+    <div class="grid-b sold" id="gridB"></div>
+
+    <div class="bottom-cta rv">
+      <p class="sub">Não encontrou o que procura? <a class="u" href="#contato">Conte o perfil ideal</a> e buscamos exclusivamente para você.</p>
+      <a href="#contato" class="btn btn-w">Agendar visita <svg class="ico"><use href="#i-up"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ GALERIA ═════════════ -->
+<section class="sec gal" id="galeria" aria-labelledby="gal-h">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:40px">
+      <div>
+        <p class="eyebrow rv">Tour visual</p>
+        <h2 class="h2 rv d1" id="gal-h">Residência <em>Altiplano Leste</em></h2>
+        <div class="lede rv d2"><p>Casa térrea de 2023 em condomínio fechado no Setor Habitacional Jardim Botânico — 300 m² pensados em cada detalhe para unir conforto, privacidade e lazer.</p></div>
+      </div>
+      <div class="gal-ctrl rv d3">
+        <button class="circ" id="galPrev" aria-label="Rolar para a esquerda"><svg class="ico"><use href="#i-left"/></svg></button>
+        <button class="circ" id="galNext" aria-label="Rolar para a direita"><svg class="ico"><use href="#i-right"/></svg></button>
+        <button class="circ" id="galAll" aria-label="Abrir galeria em tela cheia"><svg class="ico"><use href="#i-grid"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="gal-track rv" id="galTrack"></div>
+  <div class="wrap">
+    <div class="gal-meta rv">
+      <div><b>R$ 1.860.000</b><small>Valor de venda</small></div>
+      <div><b>R$ 450</b><small>Condomínio mensal</small></div>
+      <div><b>4 suítes</b><small>6 banheiros no total</small></div>
+      <div><b>2023</b><small>Ano de construção</small></div>
+      <div><b>FGCN40002</b><small>Código do imóvel</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Galeria de fotos">
+  <button class="circ x" id="lbX" aria-label="Fechar galeria"><svg class="ico"><use href="#i-x"/></svg></button>
+  <button class="circ pv" id="lbP" aria-label="Imagem anterior"><svg class="ico"><use href="#i-left"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="circ nx" id="lbN" aria-label="Próxima imagem"><svg class="ico"><use href="#i-right"/></svg></button>
+  <div class="lb-c" id="lbC"></div>
+</div>
+
+<!-- ═════════════ HOUSE FLIPPING ═════════════ -->
+<section class="sec" id="house-flipping" aria-labelledby="hf-h">
+  <div class="grain"></div>
+  <div class="wrap flip-grid" style="position:relative">
+    <div>
+      <p class="eyebrow rv">Construção &amp; House Flipping</p>
+      <h2 class="h2 rv d1" id="hf-h">Imóveis originais, <em>reinventados</em></h2>
+      <div class="lede rv d2"><p>Adquirimos casas e apartamentos originais — muitas vezes em leilões ou inventários — e os transformamos com projeto de arquitetura e iluminação assinados. O resultado: imóveis modernos, prontos para morar e com valor real agregado.</p></div>
+      <div class="steps">
+        <div class="step rv d2"><em>01</em><div><h4>Aquisição criteriosa</h4><p>Seleção de imóveis bem localizados, com potencial de valorização comprovado pela análise de mercado.</p></div></div>
+        <div class="step rv d3"><em>02</em><div><h4>Projeto assinado</h4><p>Arquitetura e luminotécnica desenvolvidas por profissionais parceiros, com acabamentos de alto padrão.</p></div></div>
+        <div class="step rv d4"><em>03</em><div><h4>Entrega pontual</h4><p>Obra acompanhada de perto e entregue no prazo — pronta para morar, sem surpresas.</p></div></div>
+      </div>
+      <p class="sub rv d5" style="margin-top:24px;font-size:12px">Projetos já administrados: SQN 115 · SQN 310 e SQN 215 (projeto Maria Alice dos Santos Mota) · Residência “Uma bela vista” (projeto Ataliba Texeira). Iluminação: Marcelo Miranda.</p>
+    </div>
+    <div class="mosaic rv d2">
+      <figure><img loading="lazy" src="https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/14/img/14_G1699617465.jpg" alt="Living integrado do apartamento SQN 115 após a reforma"><figcaption><b>SQN 115 · Asa Norte</b><small>Reforma completa · 3 suítes e escritório · 168 m²</small></figcaption></figure>
+      <figure><img loading="lazy" src="https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/14/img/14_G1699617401.jpg" alt="Closet com marcenaria sob medida no SQN 115"><figcaption><b>Marcenaria sob medida</b><small>Armários planejados em todas as suítes</small></figcaption></figure>
+      <figure><img loading="lazy" src="https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/14/img/14_G1699617406.jpg" alt="Ambiente com iluminação cênica no SQN 115"><figcaption><b>Luminotécnica</b><small>Iluminação cênica em forro de gesso</small></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ QUEM SOMOS ═════════════ -->
+<section class="sec gal" id="quem-somos" aria-labelledby="qs-h">
+  <div class="wrap prof">
+    <div class="portrait rv">
+      <img loading="lazy" src="https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/8/img/8_G1740517102.jpg" alt="Residência em condomínio fechado no Jardim Botânico, comercializada pela Ferreira Gomes">
+      <span class="creci">CRECI PJ nº 29053</span>
+      <div class="cap"><b>Ferreira Gomes</b><small>Negócios Imobiliários · Brasília–DF</small></div>
+    </div>
+    <div>
+      <p class="eyebrow rv">Quem somos</p>
+      <h2 class="h2 rv d1" id="qs-h">Confiança construída em <em>décadas</em></h2>
+      <p class="sub rv d2" style="margin-bottom:14px">Idealizada por Claudio Ferreira Gomes, que atuou por mais de trinta anos no setor público, a Ferreira Gomes nasceu para comercializar imóveis — venda e locação — e para construir e reformar imóveis de alto padrão, bem localizados e modernos.</p>
+      <p class="sub rv d2">A marca atua em duas frentes: <span style="color:var(--t1)">house flipping</span>, com aquisição e reforma de casas e apartamentos, e <span style="color:var(--t1)">imobiliária</span>, na compra, venda e locação de imóveis de terceiros — sempre com atendimento personalizado.</p>
+
+      <div class="kpis rv d3">
+        <div><b>30+</b><small>anos de experiência no setor público</small></div>
+        <div><b>2</b><small>frentes: imobiliária e house flipping</small></div>
+        <div><b>3+</b><small>reformas de alto padrão entregues</small></div>
+        <div><b>3</b><small>serviços: venda, locação e reforma</small></div>
+      </div>
+
+      <div class="mvv rv d4">
+        <details open><summary>Missão</summary><p>Proporcionar bem-estar, qualidade de vida e segurança, comercializando imóveis residenciais e comerciais modernos, de qualidade, bem localizados, seguros e mais sustentáveis — valorizando ao máximo o investimento do cliente.</p></details>
+        <details><summary>Visão</summary><p>Tornar-se referência no mercado imobiliário do Distrito Federal, destacando-se pela qualidade desde o atendimento inicial até a entrega do imóvel.</p></details>
+        <details><summary>Valores</summary><p>Ética, honestidade, transparência e confiabilidade. Atenção rigorosa aos detalhes, pontualidade na entrega e respeito ao meio ambiente.</p></details>
+      </div>
+
+      <div class="chips rv d5"><span>Lago Sul</span><span>Jardim Botânico</span><span>Altiplano Leste</span><span>Noroeste</span><span>Asa Norte</span><span>Sudoeste</span><span>Reformas de alto padrão</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ DEPOIMENTOS ═════════════ -->
+<section class="sec" aria-labelledby="dep-h">
+  <div class="grain"></div>
+  <div class="wrap" style="position:relative">
+    <div class="c-head">
+      <p class="eyebrow center rv">Depoimentos</p>
+      <h2 class="h2 rv d1" id="dep-h">Quem confiou, <em>recomenda</em></h2>
+    </div>
+    <div class="quotes">
+      <article class="q rv d1"><div class="mk">“</div><p>Trabalho impecável! Desde a visita ao imóvel, passando pela negociação e tudo que envolve o processo de intermediação com proprietários e instituições financeiras, a assessoria do Cláudio foi excelente.</p><footer><span class="av">EG</span><div><b>Elisa Guimarães</b><small>Cliente Ferreira Gomes</small></div></footer></article>
+      <article class="q rv d2"><div class="mk">“</div><p>Registro os meus agradecimentos à prestimosa equipe da Ferreira Gomes, e em especial ao Cláudio Gomes, pela competência, dedicação e profissionalismo empregados na reforma.</p><footer><span class="av">RM</span><div><b>Renan Marçal Rodrigues</b><small>Cliente Ferreira Gomes</small></div></footer></article>
+      <article class="q rv d3"><div class="mk">“</div><p>Gostaria de expressar a satisfação com o trabalho realizado pela equipe na reforma da minha clínica. Desde o início do projeto até sua conclusão tive todo o suporte da equipe.</p><footer><span class="av">CV</span><div><b>Camila Vieira</b><small>Cliente Ferreira Gomes</small></div></footer></article>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ CONTATO ═════════════ -->
+<section class="sec contact" id="contato" aria-label="Formulário de contato">
+  <div class="wrap">
+    <div class="c-head">
+      <p class="eyebrow center rv">Vamos conversar</p>
+      <h2 class="h2 rv d1">Encontre o seu imóvel <em>ideal</em></h2>
+      <p class="sub rv d2">Preencha o formulário — a mensagem segue direto para o WhatsApp da nossa equipe.</p>
+    </div>
+
+    <form class="form rv d2" id="form" novalidate>
+      <div id="formBody">
+        <div class="row two">
+          <div class="f" data-f="name"><label>Seu nome <i>*</i></label><input name="name" placeholder="Nome completo" autocomplete="name"><p class="e">Informe seu nome</p></div>
+          <div class="f" data-f="phone"><label>WhatsApp <i>*</i></label><input name="phone" placeholder="(61) 90000-0000" inputmode="tel" autocomplete="tel"><p class="e">Telefone inválido</p></div>
+        </div>
+        <div class="row"><div class="f" data-f="email"><label>E-mail <i>*</i></label><input name="email" type="email" placeholder="voce@email.com" autocomplete="email"><p class="e">E-mail inválido</p></div></div>
+
+        <div class="grp" data-g="interest"><span class="lbl">Quero <i>*</i></span><div class="opts" data-single="interest"><button type="button" class="opt">Comprar</button><button type="button" class="opt">Vender</button><button type="button" class="opt">Alugar</button><button type="button" class="opt">Investir (house flipping)</button></div><p class="e">Selecione uma opção</p></div>
+        <div class="grp" data-g="range"><span class="lbl">Faixa de valor <i>*</i></span><div class="opts" data-single="range"><button type="button" class="opt">Até R$ 1M</button><button type="button" class="opt">R$ 1M – R$ 2M</button><button type="button" class="opt">R$ 2M – R$ 4M</button><button type="button" class="opt">Acima de R$ 4M</button></div><p class="e">Selecione uma faixa</p></div>
+        <div class="grp"><span class="lbl">Bairros de interesse</span><div class="opts" data-multi="hoods"><button type="button" class="opt">Lago Sul</button><button type="button" class="opt">Jardim Botânico</button><button type="button" class="opt">Noroeste</button><button type="button" class="opt">Asa Norte</button><button type="button" class="opt">Asa Sul</button><button type="button" class="opt">Sudoeste</button><button type="button" class="opt">Park Way</button><button type="button" class="opt">Outros</button></div></div>
+        <div class="row"><div class="f"><label>Conte mais sobre o que procura</label><textarea name="msg" rows="3" placeholder="Descreva o imóvel ideal, necessidades especiais, prazo..."></textarea></div></div>
+
+        <div class="submit"><button class="btn btn-w" type="submit">Enviar pelo WhatsApp <svg class="ico"><use href="#i-arrow"/></svg></button><small>Atendimento personalizado · CRECI PJ nº 29053</small></div>
+      </div>
+      <div class="ok" id="ok"><div class="ring"><svg class="ico"><use href="#i-check"/></svg></div><h3>Mensagem pronta!</h3><p>Abrimos o WhatsApp com seus dados. É só enviar — respondemos o quanto antes.</p></div>
+    </form>
+  </div>
+</section>
+
+<!-- ═════════════ FOOTER ═════════════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:16px"><span class="brand-mark">FG</span><span><span class="brand-n" style="display:block">Ferreira Gomes</span><span class="brand-s" style="display:block">Negócios Imobiliários</span></span></div>
+        <p class="sub" style="max-width:320px">Imóveis de alto padrão em Brasília, DF. Venda, locação, construção e house flipping.</p>
+      </div>
+      <div><h5>Contato</h5><ul>
+        <li><a href="tel:+5561996675761">(61) 99667-5761</a></li>
+        <li><a href="tel:+5561982828226">(61) 98282-8226</a></li>
+        <li><a href="mailto:contato@ferreiragomes-imobiliaria.com.br">contato@ferreiragomes-imobiliaria.com.br</a></li>
+      </ul></div>
+      <div><h5>Imobiliária</h5><ul>
+        <li><a href="#imoveis">Imóveis à venda</a></li>
+        <li><a href="https://www.ferreiragomes-imobiliaria.com.br/imoveis/aluguel/" target="_blank" rel="noopener">Locação</a></li>
+        <li><a href="https://www.ferreiragomes-imobiliaria.com.br/contato/comercialize-seu-imovel/" target="_blank" rel="noopener">Comercialize seu imóvel</a></li>
+        <li><a href="https://www.ferreiragomes-imobiliaria.com.br/simule-seu-financiamento/" target="_blank" rel="noopener">Simule seu financiamento</a></li>
+      </ul></div>
+      <div><h5>Empresa</h5><ul>
+        <li><a href="#quem-somos">Quem somos</a></li>
+        <li><a href="#house-flipping">Construção &amp; House Flipping</a></li>
+        <li>CRECI PJ nº 29053</li>
+      </ul></div>
+    </div>
+    <div class="foot-base"><span>© 2026 Ferreira Gomes Negócios Imobiliários</span><span>Conceito de redesign · GA Solutions</span></div>
+  </div>
+</footer>
+
+<div class="fab" id="fab">
+  <span class="fab-tip">Fale conosco pelo WhatsApp</span>
+  <a class="fab-main" href="https://wa.me/5561996675761?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp"><svg class="ico" style="width:26px;height:26px"><use href="#i-wa"/></svg></a>
+</div>
+
+<script>
+(() => {
+  const F = 'https://fotosmd.sitemidas.com.br/midasweb/arquivos/2170/imoveis/fotos/';
+  const SITE = 'https://www.ferreiragomes-imobiliaria.com.br/imovel/';
+  const WA = '5561996675761';
+
+  const props = [
+    { id:'FGCN40002', tag:['Exclusivo','ex'], title:'Residência em Condomínio — Altiplano Leste', where:'Jardim Botânico (Lago Sul), Brasília–DF', nb:'Altiplano Leste', price:'R$ 1.860.000', note:'Construída em 2023',
+      img:F+'20/img/20_G1712001961.jpg', specs:[['bed','4 suítes'],['max','300 m²'],['car','3 vagas']], url:'casa-em-alto-padrao-dentro-de-condominio-no-altiplano-leste/FGCN40002' },
+    { id:'FGCN30001', tag:['Lazer completo','nv'], title:'Casa no Condomínio Quintas do Sol', where:'Jardim Botânico (Lago Sul), Brasília–DF', nb:'Jardim Botânico', price:'R$ 1.650.000',
+      img:F+'8/img/8_G1740517123.jpg', specs:[['bed','3 suítes'],['max','320 m²'],['pin','750 m²']], url:'casa-750-m2-jardim-botanico-condominio-fechado/FGCN30001' },
+    { id:'FGAP20001', title:'Apartamento 2 Suítes — SQNW 109', where:'Setor Noroeste, Brasília–DF', nb:'Noroeste', price:'R$ 1.778.000',
+      img:F+'16/img/16_G1703794659.jpg', specs:[['bed','2 suítes'],['max','127 m²'],['car','2 vagas']], url:'apartamento-alto-padrao-2-suites-noroeste/FGAP20001' },
+  ];
+  const sold = [
+    { id:'FGAP30002', tag:['Vendido','op'], title:'Sofisticação Contemporânea — SQN 115', where:'Asa Norte, Brasília–DF', nb:'Asa Norte', price:'Vendido', note:'Reforma Ferreira Gomes',
+      img:F+'14/img/14_G1699617465.jpg', specs:[['bed','3 suítes + escritório'],['max','168 m²']], url:'sofisticacao-contemporanea-3-suites-e-escritorio-reforma-de-alto-padrao/FGAP30002' },
+    { id:'FGLT00001', tag:['Vendido','op'], title:'Terreno no Setor de Chácaras — QI 23', where:'Lago Sul, Brasília–DF', nb:'Lago Sul', price:'Vendido',
+      img:F+'15/img/15_G1699648244.jpg', specs:[['max','2.294 m² de terreno'],['pin','4,3 km da Ponte JK']], url:'lote-a-venda-brasilia-df-setor-de-habitacoes-individuais-sul/FGLT00001' },
+    { id:'FGAP30001', tag:['Vendido','op'], title:'Apartamento 3 Quartos — SQN 112', where:'Asa Norte, Brasília–DF', nb:'Asa Norte', price:'Vendido',
+      img:F+'7/img/7_G1681220290.jpg', specs:[['bed','3 quartos'],['max','137 m²']], url:'apartamento-3-quartos-a-venda-brasilia-df-asa-norte/FGAP30001' },
+  ];
+
+  const ico = n => `<svg class="ico"><use href="#i-${n}"/></svg>`;
+  const card = (p, big, d) => `
+    <article class="card ${big?'big':''} rv d${d}">
+      <div class="card-img">
+        <img loading="${big?'eager':'lazy'}" src="${p.img}" alt="${p.title} — ${p.where}">
+        ${p.tag?`<span class="tag ${p.tag[1]}">${p.tag[0]}</span>`:''}
+        <button class="fav" type="button" aria-label="Adicionar aos favoritos">${ico('heart')}</button>
+        <span class="nb">${ico('pin')}${p.nb}</span>
+      </div>
+      <div class="card-body">
+        <h3>${p.title}</h3>
+        <p class="where">${p.where} · Cód. ${p.id}</p>
+        <div class="val">${p.price}${p.note?`<small>· ${p.note}</small>`:''}</div>
+        <hr>
+        <div class="card-foot">
+          <div class="specs">${p.specs.map(s=>`<span>${ico(s[0])}${s[1]}</span>`).join('')}</div>
+          <a class="arrow" href="${SITE+p.url}" target="_blank" rel="noopener" aria-label="Ver detalhes de ${p.title}">${ico('up')}</a>
+        </div>
+      </div>
+    </article>`;
+
+  const [feat, ...rest] = props;
+  document.getElementById('gridA').innerHTML = card(feat,true,1) + `<div class="stack">${rest.map((p,i)=>card(p,false,i+2)).join('')}</div>`;
+  document.getElementById('gridB').innerHTML = sold.map((p,i)=>card(p,false,i+1)).join('');
+
+  document.addEventListener('click', e => {
+    const f = e.target.closest('.fav'); if (!f) return;
+    f.classList.toggle('on');
+    f.setAttribute('aria-label', f.classList.contains('on') ? 'Remover dos favoritos' : 'Adicionar aos favoritos');
+  });
+
+  /* gallery */
+  const G = ['1712001957','1712001961','1711987744','1711987748','1711987741','1711987753','1711987757','1711987761'].map(s=>F+'20/img/20_G'+s+'.jpg');
+  const shape = ['w','n','n','w','n','w','n','w'];
+  const track = document.getElementById('galTrack');
+  track.innerHTML = G.map((src,i)=>`<figure class="gal-item ${shape[i]}" data-i="${i}"><img loading="lazy" src="${src}" alt="Residência Altiplano Leste — foto ${i+1}"><span>${String(i+1).padStart(2,'0')} / ${String(G.length).padStart(2,'0')}</span></figure>`).join('');
+  const step = () => Math.min(track.clientWidth * .8, 600);
+  document.getElementById('galPrev').onclick = () => track.scrollBy({left:-step(),behavior:'smooth'});
+  document.getElementById('galNext').onclick = () => track.scrollBy({left: step(),behavior:'smooth'});
+
+  // drag to scroll
+  let down=false, sx=0, sl=0, moved=false;
+  track.addEventListener('pointerdown', e => { if (e.pointerType!=='mouse') return; down=true; moved=false; sx=e.clientX; sl=track.scrollLeft; track.style.scrollSnapType='none'; });
+  window.addEventListener('pointermove', e => { if(!down) return; const dx=e.clientX-sx; if(Math.abs(dx)>4) moved=true; track.scrollLeft = sl - dx; });
+  window.addEventListener('pointerup', () => { if(!down) return; down=false; track.style.scrollSnapType=''; });
+
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbC = document.getElementById('lbC');
+  let cur = 0;
+  const show = i => { cur = (i + G.length) % G.length; lbImg.src = G[cur]; lbImg.alt = `Residência Altiplano Leste — foto ${cur+1}`; lbC.textContent = `${cur+1} / ${G.length}`; };
+  const open = i => { show(i); lb.classList.add('open'); document.body.style.overflow='hidden'; document.getElementById('lbX').focus(); };
+  const close = () => { lb.classList.remove('open'); document.body.style.overflow=''; };
+  track.addEventListener('click', e => { const it = e.target.closest('.gal-item'); if (it && !moved) open(+it.dataset.i); });
+  document.getElementById('galAll').onclick = () => open(0);
+  document.getElementById('lbX').onclick = close;
+  document.getElementById('lbP').onclick = () => show(cur-1);
+  document.getElementById('lbN').onclick = () => show(cur+1);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  window.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key==='Escape') close(); if (e.key==='ArrowLeft') show(cur-1); if (e.key==='ArrowRight') show(cur+1);
+  });
+
+  /* reveal */
+  const io = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }), { rootMargin:'0px 0px -60px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  /* hero parallax */
+  const hero = document.querySelector('.hero'), hImg = document.getElementById('heroImg'), hCopy = document.getElementById('heroCopy'), hOv = document.getElementById('heroOv');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let ticking=false;
+  const onScroll = () => {
+    const h = hero.offsetHeight, p = Math.min(Math.max(scrollY / h, 0), 1);
+    if (!reduce) { hImg.style.transform = `translateY(${p*18}%) scale(1.12)`; hCopy.style.transform = `translateY(${p*8}%)`; }
+    hOv.style.opacity = .75 + Math.min(p*2,1) * .25;
+    document.getElementById('fab').classList.toggle('show', scrollY > h*.6 && scrollY < h*1.4);
+    ticking=false;
+  };
+  addEventListener('scroll', () => { if(!ticking){ requestAnimationFrame(onScroll); ticking=true; } }, { passive:true });
+  onScroll();
+
+  /* form → WhatsApp */
+  const form = document.getElementById('form'), sel = { interest:'', range:'', hoods:new Set() };
+  form.querySelectorAll('[data-single]').forEach(g => g.addEventListener('click', e => {
+    const b = e.target.closest('.opt'); if (!b) return;
+    g.querySelectorAll('.opt').forEach(o => o.classList.toggle('on', o===b));
+    sel[g.dataset.single] = b.textContent; g.closest('.grp').classList.remove('err');
+  }));
+  form.querySelectorAll('[data-multi]').forEach(g => g.addEventListener('click', e => {
+    const b = e.target.closest('.opt'); if (!b) return;
+    b.classList.toggle('on'); b.classList.contains('on') ? sel.hoods.add(b.textContent) : sel.hoods.delete(b.textContent);
+  }));
+  const phone = form.phone;
+  phone.addEventListener('input', () => {
+    const d = phone.value.replace(/\D/g,'').slice(0,11);
+    phone.value = d.length>6 ? `(${d.slice(0,2)}) ${d.slice(2,d.length-4)}-${d.slice(-4)}` : d.length>2 ? `(${d.slice(0,2)}) ${d.slice(2)}` : d;
+  });
+  form.querySelectorAll('input').forEach(i => i.addEventListener('input', () => i.closest('.f').classList.remove('err')));
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const bad = [];
+    if (!form.name.value.trim()) bad.push(form.querySelector('[data-f=name]'));
+    if (form.phone.value.replace(/\D/g,'').length < 10) bad.push(form.querySelector('[data-f=phone]'));
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.value)) bad.push(form.querySelector('[data-f=email]'));
+    if (!sel.interest) bad.push(form.querySelector('[data-g=interest]'));
+    if (!sel.range) bad.push(form.querySelector('[data-g=range]'));
+    form.querySelectorAll('.err').forEach(x=>x.classList.remove('err'));
+    if (bad.length) { bad.forEach(x=>x.classList.add('err')); bad[0].scrollIntoView({behavior:'smooth',block:'center'}); return; }
+    const txt = [
+      `Olá! Meu nome é ${form.name.value.trim()}.`,
+      `Quero: ${sel.interest} · Faixa: ${sel.range}`,
+      sel.hoods.size ? `Bairros: ${[...sel.hoods].join(', ')}` : '',
+      form.msg.value.trim() ? `Detalhes: ${form.msg.value.trim()}` : '',
+      `Contato: ${form.phone.value} · ${form.email.value}`
+    ].filter(Boolean).join('\n');
+    window.open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`, '_blank', 'noopener');
+    document.getElementById('formBody').style.display='none';
+    document.getElementById('ok').style.display='block';
+  });
+})();
+</script>
+</body>
+</html>
